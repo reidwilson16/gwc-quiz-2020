@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Quiz | What's your spirit animal?</title>
+	<style>
+		body {
+			background-color: lightblue;
+			font-family: Helvetica;
+		}
+
+		#main {
+			width: 60%;
+			border: 1px gray solid;
+			margin: auto;
+			padding: 10px;
+			background-color: white;
+			border-radius: 10px;
+		}
+
+		#header {
+			margin-top: 0;
+			border: 2px solid black;
+			padding: 5px;
+			/* height: 250px; */
+		}
+
+		label {
+			/* width: 200px; */
+			padding-right: 20px;
+			display: inline-block;
+		}
+
+		button {
+			display: block;
+			margin-top: 20px;
+
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		<div id="header">
+			<center>
+				<h1>What is your spirit animal?</h1>
+				<p>By: Add Name here</p>
+				<img src="https://hips.hearstapps.com/ame-prod-goodhousekeeping-assets.s3.amazonaws.com/main/embedded/31251/baby-animals5.jpg?resize=480:*"/ width="auto" height="300">
+			</center>
+		</div>
+
+		<form id="form1">
+
+			<p><b>Where do you want to live in the future?</b></p>
+			<label><input type="radio" name="live" id="east" value="3" />East Coast</label>
+			<label><input type="radio" name="live" id="west" value="2" />West Coast</label>
+			<label><input type="radio" name="live" id="clt" value="1" />Charlotte</label>
+			<br></br>
+			<p><b>What would you prefer to do?</b></p>
+			<label><input type="radio" name="activity" id="netflix" value="1" />Watch Netflix/Movies</label>
+			<label><input type="radio" name="activity" id="book" value="2" />Read a book</label>
+			<label><input type="radio" name="activity" id="exercise" value="3" />Go to the park and exercise</label>
+			<br></br>
+			<p><b>Pick your favorite food.</b></p>
+			<label><input type="radio" name="food" id="pizza" value="2" />Pizza</label>
+			<label><input type="radio" name="food" id="chipotle" value="2" />Chipotle</label>
+			<label><input type="radio" name="food" id="parents" value="1" />Anything my parents make</label>
+
+			<button type="submit" value="Submit">Submit</button>
+
+		</form>
+
+		<p id="answer"></p>
+		<p id="answer2"></p>
+	</div>
+	<script>
+		document.getElementById("form1").onsubmit = function () {
+
+
+			live = parseInt(document.querySelector('input[name = "live"]:checked').value);
+
+			activity = parseInt(document.querySelector('input[name = "activity"]:checked').value);
+
+			food = parseInt(document.querySelector('input[name = "food"]:checked').value);
+
+			total = live + activity + food;
+
+
+			document.getElementById("answer").innerHTML = total;
+
+			if (total < 4) {
+				document.getElementById("answer2").innerHTML = 'You got <b>Sloth</b>.<br><img src="https://static01.nyt.com/images/2014/01/28/science/28SLOT_SPAN/28SLOT-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Sloth" width="500" height="auto">';
+			}
+
+			if (total >= 4 && total < 7) {
+				document.getElementById("answer2").innerHTML = 'You got <b>cat</b>.<br><img src="https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&rect=37%2C29%2C4955%2C3293&q=45&auto=format&w=926&fit=clip" alt="Cat" width="500" height="auto">';
+			}
+
+			if (total >= 7) {
+				document.getElementById("answer2").innerHTML = 'You got <b>dog</b>.<br><img src="https://image.cnbcfm.com/api/v1/image/105992231-1561667465295gettyimages-521697453.jpeg?v=1561667497&w=1600&h=900" alt="Dog" width="500" height="auto">';
+			}
+
+			return false; // required to not refresh the page; just leave this here
+		}// end the submit function
+	</script>
+
+</body>
+
+</html>
