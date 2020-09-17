@@ -1,7 +1,10 @@
  
 # Here's what we'll be working on for the semester - you'll be creating your own Buzzfeed quiz!
 
-If you don't have any experience with coding, work through the HTML/CSS tutorial on Girls Who Code to learn the basics. Once you feel comfortable, then feel free to start working on the quiz.
+If you don't have any experience with coding, watch this HTML/CSS Youtube video to learn the basics. 
+https://www.youtube.com/watch?v=bWPMSSsVdPk
+
+Once you feel comfortable, then feel free to start working on the quiz.
 
 To get started,
 1. Copy the html file into your directory.
