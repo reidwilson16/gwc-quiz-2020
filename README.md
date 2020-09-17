@@ -1,8 +1,11 @@
  
 # Here's what we'll be working on for the semester - you'll be creating your own Buzzfeed quiz!
 
-If you don't have any experience with coding, watch this HTML/CSS Youtube video to learn the basics. 
-https://www.youtube.com/watch?v=bWPMSSsVdPk
+If you don't have any experience with coding, watch this series of HTML/CSS Youtube video to learn the basics. 
+
+1. https://www.youtube.com/watch?v=bWPMSSsVdPk
+2. https://www.youtube.com/watch?v=KJ13lX20FqU
+3. https://www.youtube.com/watch?v=0afZj1G0BIE
 
 Once you feel comfortable, then feel free to start working on the quiz.
 
