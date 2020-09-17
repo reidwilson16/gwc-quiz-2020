@@ -3,9 +3,10 @@
 
 If you don't have any experience with coding, watch this series of HTML/CSS Youtube video to learn the basics. 
 
-1. https://www.youtube.com/watch?v=bWPMSSsVdPk
-2. https://www.youtube.com/watch?v=KJ13lX20FqU
-3. https://www.youtube.com/watch?v=0afZj1G0BIE
+1. https://www.youtube.com/watch?v=bWPMSSsVdPk (required - HTML basics)
+2. https://www.youtube.com/watch?v=KJ13lX20FqU (required - HTML basics, but more advanced)
+3. https://www.youtube.com/watch?v=0afZj1G0BIE (required - CSS basics)
+4. https://www.youtube.com/watch?v=Ukg_U3CnJWI (optional - JavaScript basics)
 
 Once you feel comfortable, then feel free to start working on the quiz.
 
